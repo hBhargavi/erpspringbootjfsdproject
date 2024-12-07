@@ -6,7 +6,7 @@
 Admin adm = (Admin) session.getAttribute("admin");
 if (adm == null) 
 {
-    response.sendRedirect("adminlogin"); // Redirect to login if not authenticated
+    response.sendRedirect("sessionexpiry"); // Redirect to login if not authenticated
     return; // Prevent further processing
 }
 %>

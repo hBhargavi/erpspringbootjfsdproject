@@ -6,7 +6,7 @@
 <%
 Student student = (Student) session.getAttribute("student");
 if (student == null) {
-    response.sendRedirect("studentlogin"); // Redirect to login if not authenticated
+    response.sendRedirect("sessionexpiry"); // Redirect to login if not authenticated
     return;
 }
 %>

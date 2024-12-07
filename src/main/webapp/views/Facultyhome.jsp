@@ -1,15 +1,14 @@
 <%@page import="com.klef.jfsd.springboot.Models.Faculty"%>
-<%@ page import="com.klef.jfsd.springboot.Models.Admin"%>
+<%@page import="com.klef.jfsd.springboot.Models.Leave"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="jakarta.tags.core" prefix="c" %>
 
 <%
-Faculty f = (Faculty) session.getAttribute("faculty");
-if (f == null) 
-{
-    response.sendRedirect("facultylogin"); // Redirect to login if not authenticated
-    return; // Prevent further processing
-}
+    Faculty f = (Faculty) session.getAttribute("faculty");
+    if (f == null) {
+        response.sendRedirect("sessionexpiry"); // Redirect to login if not authenticated
+        return; // Prevent further processing
+    }
 %>
 <!DOCTYPE html>
 <html lang="en">

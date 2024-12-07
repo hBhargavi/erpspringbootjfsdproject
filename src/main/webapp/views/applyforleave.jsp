@@ -6,7 +6,7 @@
 <%
     Faculty f = (Faculty) session.getAttribute("faculty");
     if (f == null) {
-        response.sendRedirect("facultylogin"); // Redirect to login if not authenticated
+        response.sendRedirect("sessionexpiry"); // Redirect to login if not authenticated
         return; // Prevent further processing
     }
 %>

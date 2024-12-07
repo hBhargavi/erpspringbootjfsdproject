@@ -1,4 +1,15 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page import="com.klef.jfsd.springboot.Models.Faculty"%>
+<%@page import="com.klef.jfsd.springboot.Models.Leave"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="jakarta.tags.core" prefix="c" %>
+
+<%
+    Faculty f = (Faculty) session.getAttribute("faculty");
+    if (f == null) {
+        response.sendRedirect("sessionexpiry"); // Redirect to login if not authenticated
+        return; // Prevent further processing
+    }
+%>
 <html>
 <head>
     <title>Select Year and Semester</title>

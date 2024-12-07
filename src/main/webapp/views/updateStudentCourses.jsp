@@ -1,11 +1,20 @@
 <%@ page import="com.klef.jfsd.springboot.Models.Course"%>
+<%@ page import="com.klef.jfsd.springboot.Models.Admin"%>
 <%@ page import="com.klef.jfsd.springboot.Models.Faculty"%>
 <%@ page import="com.klef.jfsd.springboot.Models.Student"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <%
 Student student = (Student) request.getAttribute("student");
+Admin adm = (Admin) session.getAttribute("admin");
+if (adm == null) {
+    response.sendRedirect("sessionexpiry"); // Redirect to login if not authenticated
+    return; // Prevent further processing
+}
 %>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
