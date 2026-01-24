@@ -66,7 +66,7 @@ Educational-ERP-System
 | Resource                          | Link                                                   |
 | --------------------------------- | ------------------------------------------------------ |
 | **GitHub Repository**             | [https://lnkd.in/gD5Hv8tH](https://lnkd.in/gD5Hv8tH)   |
-| **Live Deployment**               | [https://lnkd.in/gcRAAD45](https://lnkd.in/gcRAAD45)   |
+| **Live Deployment**               | [https://lnkd.in/gcRAAD45](https://lnkd.in/gcRAAD45) or https://www.linkedin.com/posts/duddukuri-bhargavi-a887b6285_javafullstack-springboot-mysql-activity-7276858727654178816-gg9c?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEVaDYgBBu6B05JO1jY2yS1O8GexQT0wX1k   |
 | **Project Article/Documentation** | [https://shorturl.at/UIg8G](https://shorturl.at/UIg8G) |
 
 ---
